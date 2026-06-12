@@ -10,6 +10,7 @@ import Collection from './pages/Collection'
 import Cart from './pages/Cart'
 import Product from './pages/Product'
 import PlaceOrder from './pages/PlaceOrder'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/place-order" element={<PlaceOrder />} />
          
       </Routes>
+      <Footer />
     </div>
   )
 }
