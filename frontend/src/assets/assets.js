@@ -6,6 +6,7 @@ import menu_icon from './menu_icon.png'
 import dropdown_icon from './dropdown_icon.png'
 import exchange_icon from './exchange_icon.png'
 import quality_icon from './quality_icon.png'
+import cross_icon from './cross_icon.png'
 import support_img from './support_img.png'
 import hero_img from './hero_img.png'
 import p_img1 from './p_img1.png'
@@ -24,7 +25,9 @@ export const assets = {
     dropdown_icon,
     exchange_icon,
     quality_icon,
-    support_img
+    support_img,
+    search_icon,
+    cross_icon
 }
 export const products = [
   {
@@ -34,7 +37,7 @@ export const products = [
     price: 799,
     image: [p_img1],
     category: "Home Decor",
-    subCategory: "Vases",
+    subCategory: "Decorative",
     sizes: [],
     date: 1716634345448,
     bestseller: true
@@ -46,7 +49,7 @@ export const products = [
     price: 999,
     image: [p_img2],
     category: "Home Decor",
-    subCategory: "Wall Art",
+    subCategory: "Decorative",
     sizes: [],
     date: 1716634345448,
     bestseller: true
@@ -58,7 +61,7 @@ export const products = [
     price: 349,
     image: [p_img3],
     category: "Candles",
-    subCategory: "Decor",
+    subCategory: "Decorative",
     sizes: [],
     date: 1716634345448,
     bestseller: false
@@ -69,8 +72,8 @@ export const products = [
     description: "Handcrafted wooden box for storing jewelry and accessories.",
     price: 1299,
     image: [p_img4],
-    category: "Storage",
-    subCategory: "Wood Crafts",
+    category: "Wood Crafts",
+    subCategory: "Utility",
     sizes: [],
     date: 1716634345448,
     bestseller: true
@@ -81,8 +84,8 @@ export const products = [
     description: "Cute handmade crochet teddy bear made with soft yarn.",
     price: 599,
     image: [p_img5],
-    category: "Toys",
-    subCategory: "Crochet",
+    category: "Crochet",
+    subCategory: "Decorative",
     sizes: [],
     date: 1716634345448,
     bestseller: false
@@ -93,8 +96,8 @@ export const products = [
     description: "Premium handmade resin coasters with artistic designs.",
     price: 699,
     image: [p_img6],
-    category: "Home Decor",
-    subCategory: "Resin Art",
+    category: "Resin Art",
+    subCategory: "Utility",
     sizes: [],
     date: 1716634345448,
     bestseller: true
