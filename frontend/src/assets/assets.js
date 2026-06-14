@@ -8,6 +8,8 @@ import exchange_icon from './exchange_icon.png'
 import quality_icon from './quality_icon.png'
 import cross_icon from './cross_icon.png'
 import support_img from './support_img.png'
+import star_icon from './star_icon.png'
+import star_dull_icon from './star_dull_icon.png'
 import hero_img from './hero_img.png'
 import p_img1 from './p_img1.png'
 import p_img2 from './p_img2.png'
@@ -27,7 +29,9 @@ export const assets = {
     quality_icon,
     support_img,
     search_icon,
-    cross_icon
+    cross_icon,
+    star_icon,
+    star_dull_icon
 }
 export const products = [
   {
@@ -35,10 +39,10 @@ export const products = [
     name: "Hand-Painted Clay Vase",
     description: "Beautiful handcrafted clay vase with traditional artwork.",
     price: 799,
-    image: [p_img1],
+    image: [p_img1,p_img2,p_img3],
     category: "Home Decor",
     subCategory: "Decorative",
-    sizes: [],
+    sizes: ['S'],
     date: 1716634345448,
     bestseller: true
   },
