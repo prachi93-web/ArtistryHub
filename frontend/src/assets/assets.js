@@ -9,6 +9,7 @@ import quality_icon from './quality_icon.png'
 import cross_icon from './cross_icon.png'
 import support_img from './support_img.png'
 import star_icon from './star_icon.png'
+import bin_icon from './bin_icon.png'
 import star_dull_icon from './star_dull_icon.png'
 import hero_img from './hero_img.png'
 import p_img1 from './p_img1.png'
@@ -31,7 +32,8 @@ export const assets = {
     search_icon,
     cross_icon,
     star_icon,
-    star_dull_icon
+    star_dull_icon,
+    bin_icon
 }
 export const products = [
   {

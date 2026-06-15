@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { products } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
 export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
@@ -9,6 +10,7 @@ const ShopContextProvider = (props) => {
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
+    const navigate = useNavigate();
 
     const addToCart = async (ItemId) => {
         let cartData = structuredClone(cartItems);
@@ -22,16 +24,47 @@ const ShopContextProvider = (props) => {
         setCartItems(cartData);
     }
 
-    useEffect(()=>{
-        console.log(cartItems);      
-    },[cartItems])
+    const getCartCount = () => {
+        let totalCount = 0;
+        for(const items in cartItems){
+            try {
+                if(cartItems[items] > 0) {
+                    totalCount += cartItems[items];
+                }
+                } catch (error) {
+            }
+        }
+        return totalCount;
+    }
+
+    const updateQuantity = async (ItemId,quantity) => {
+
+        let cartData = structuredClone(cartItems);
+        cartData[ItemId] = quantity;
+        setCartItems(cartData);
+    }
+
+    const getCartAmount = () => {
+        let totalAmount = 0;
+        for(const items in cartItems) {
+            let itemInfo = products.find((product)=> product._id === items);        
+            try {
+                if (cartItems[items] > 0) {
+                    totalAmount += itemInfo.price * cartItems[items];
+                }
+                } catch (error) {
+            }
+        }
+        return totalAmount;
+    }
 
     const value ={
         products,
         currency,
         delivery_fee,
         search, setSearch, showSearch, setShowSearch,
-        cartItems,addToCart
+        cartItems,addToCart,getCartCount,updateQuantity
+        ,getCartAmount,navigate
     }
 
     return (
