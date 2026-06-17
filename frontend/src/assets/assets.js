@@ -14,6 +14,8 @@ import star_dull_icon from './star_dull_icon.png'
 import hero_img from './hero_img.png'
 import stripe_logo from './stripe_logo.png'
 import razorpay_logo from './razorpay_logo.png'
+import about_img from './about_img.png'
+import contact_img from './contact_img.png'
 import p_img1 from './p_img1.png'
 import p_img2 from './p_img2.png'
 import p_img3 from './p_img3.png'
@@ -37,7 +39,9 @@ export const assets = {
     star_dull_icon,
     bin_icon,
     stripe_logo,
-    razorpay_logo
+    razorpay_logo,
+    about_img,
+    contact_img
 }
 export const products = [
   {
