@@ -9,7 +9,7 @@ const LatestCollection = () => {
 
     useEffect(() => {
         setLatestProducts(products.slice(0,10));  // will display latest 10 products
-    },[])
+    },[products])
 
   return (
     <div className='my-10'>
