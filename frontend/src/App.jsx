@@ -13,6 +13,7 @@ import PlaceOrder from './pages/PlaceOrder'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import { ToastContainer, toast } from 'react-toastify';
+import Verify from './pages/Verify'
 //import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
         <Route path="/collection" element={<Collection />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/place-order" element={<PlaceOrder />} />
-         
+        <Route path="/verify" element={<Verify />} />
+ 
       </Routes>
       <Footer />
     </div>
