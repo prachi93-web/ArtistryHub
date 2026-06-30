@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../components/Title'
-import NewsLetterBox from '../components/NewsLetterBox'
+import NewsletterBox from '../components/NewsletterBox'
 import { assets } from '../assets/assets'
 
 const About = () => {
@@ -34,7 +34,7 @@ const About = () => {
           <b>Exceptional Customer Service:</b>
           <p className='text-gray-600'>We believe that great customer service is just as important as great products. Our team is always ready to assist customers with their questions, provide support when needed, and ensure a smooth and satisfying shopping experience from start to finish.</p>        </div>
       </div>
-      <NewsLetterBox />
+      <NewsletterBox />
     </div>
   )
 }
